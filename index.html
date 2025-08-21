@@ -26,17 +26,36 @@
     header p {
       margin: 0.5rem 0 0;
     }
+
+    /* Navigation */
     nav {
       background: #333;
-      text-align: center;
-      padding: 0.8rem;
     }
-    nav a {
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+    .nav-links {
+      display: flex;
+    }
+    .nav-links a {
       color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Sections */
     section {
       max-width: 900px;
       margin: auto;
@@ -67,6 +86,28 @@
     a {
       color: #0073e6;
     }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #444;
+      }
+      .nav-links a {
+        margin: 10px 0;
+        padding: 10px;
+        display: block;
+        text-align: center;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,12 +118,17 @@
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-container">
+      <span class="hamburger" onclick="toggleMenu()">☰</span>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </nav>
 
   <section id="about">
@@ -149,5 +195,11 @@
   <footer>
     <p>© 2025 - Designed by Bahador Fouladi</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
