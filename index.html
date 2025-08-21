@@ -1,101 +1,153 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>وب‌سایت شخصی من</title>
+  <title>Resume - Bahador Fouladi</title>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
-      background: #f4f4f9;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: #f9f9f9;
       color: #333;
+      line-height: 1.8;
     }
     header {
-      background: #4a90e2;
-      color: white;
-      padding: 2rem;
+      background: #0073e6;
+      color: #fff;
       text-align: center;
+      padding: 2rem;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+    header p {
+      margin: 0.5rem 0 0;
+    }
     nav {
       background: #333;
-      padding: 0.5rem;
       text-align: center;
+      padding: 0.8rem;
     }
     nav a {
-      color: white;
+      color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 2rem;
     }
     .card {
-      background: white;
+      background: #fff;
       padding: 1.5rem;
       margin: 1rem 0;
       border-radius: 10px;
       box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
     }
+    h2 {
+      color: #0073e6;
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
     footer {
       background: #333;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+    }
+    a {
+      color: #0073e6;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>سلام! من بهادر هستم 👋</h1>
-    <p>توسعه‌دهنده موبایل (Flutter & React)</p>
+    <h1>Bahador Fouladi</h1>
+    <p>Flutter Developer | Tehran, Iran</p>
+    <p>📧 <a href="mailto:b.programmer96@gmail.com" style="color:white;">b.programmer96@gmail.com</a> | 📱 +98 936 942 1435</p>
   </header>
 
   <nav>
-    <a href="#about">درباره من</a>
-    <a href="#skills">مهارت‌ها</a>
-    <a href="#contact">ارتباط</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <div class="card">
-      <h2>درباره من</h2>
-      <p>من بهادر، ۲۸ ساله از تهران هستم. عاشق برنامه‌نویسی موبایل و یادگیری تکنولوژی‌های جدید هستم. 🚀</p>
+      <h2>About Me</h2>
+      <p>A dedicated Flutter Developer with over a year of experience building scalable, user-friendly mobile applications for iOS and Android. Proficient in Flutter and Dart, experienced with state management solutions like Bloc/Cubit and Provider, API integration, and multi-language support. Skilled in UI/UX implementation using Figma and collaborative development with Git.</p>
     </div>
   </section>
 
   <section id="skills">
     <div class="card">
-      <h2>مهارت‌ها</h2>
+      <h2>Skills</h2>
       <ul>
-        <li>Flutter (Dart)</li>
-        <li>ReactJS</li>
-        <li>JavaScript / HTML / CSS</li>
-        <li>Python & Django</li>
+        <li>Flutter, Dart</li>
+        <li>iOS & Android Native Development</li>
+        <li>State Management (Bloc, Cubit, Provider)</li>
+        <li>RESTful APIs Integration</li>
+        <li>Git & Version Control</li>
+        <li>UI/UX Design (Figma)</li>
       </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="card">
+      <h2>Experience</h2>
+      <p><strong>Flutter Developer | Shahzadeh Co. (2024)</strong><br>
+      Developed the multi-lingual banking application "Saraye Shazadeh" with features like bill payments, money transfers, mobile top-ups, and card requests.</p>
+
+      <p><strong>Junior Flutter Developer | Educational Startup (2023)</strong><br>
+      Collaborated on the development of "EnLearn", an educational app designed to teach English vocabulary through interactive learning techniques.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Hotel Management App (2023):</strong> A hotel booking and service management application.</li>
+        <li><strong>EnLearn (2023):</strong> An educational mobile app for learning English vocabulary.</li>
+        <li><strong>Saraye Shazadeh (2024 - Ongoing):</strong> A multi-lingual banking app.</li>
+        <li><strong>Razavi Card (2024 - Ongoing):</strong> A banking app for Astan Quds Razavi.</li>
+        <li><strong>Rocket Master (iOS):</strong> An e-commerce mobile app for hardware tools and accessories.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="card">
+      <h2>Education</h2>
+      <p>Bachelor's Degree in Information Technology (IT) - Islamic Azad University, Tehran North Branch (2019)</p>
     </div>
   </section>
 
   <section id="contact">
     <div class="card">
-      <h2>ارتباط با من</h2>
-      <p>📧 ایمیل: <a href="mailto:bahador@example.com">bahador@example.com</a></p>
-      <p>🌐 گیت‌هاب: <a href="https://github.com/bahador22" target="_blank">github.com/bahador22</a></p>
-      <p>📷 اینستاگرام: <a href="https://instagram.com/bahadorr_22" target="_blank">@bahadorr_22</a></p>
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:b.programmer96@gmail.com">b.programmer96@gmail.com</a></p>
+      <p>🌐 GitHub: <a href="https://github.com/bahador96" target="_blank">github.com/bahador96</a></p>
+      <p>📱 Phone: +98 936 942 1435</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 - ساخته شده با ❤️ توسط بهادر</p>
+    <p>© 2025 - Designed by Bahador Fouladi</p>
   </footer>
 </body>
 </html>
